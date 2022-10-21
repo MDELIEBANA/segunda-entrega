@@ -1,0 +1,284 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colores del vuelo del cuervo 
+#42307A violeta
+#E79232 naranja
+*/
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #E79232;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+.logo span{
+    color: #333;
+}
+
+.menu{
+    float: right;
+    font-size: 27px;
+}
+
+main{
+    background-image: url(imagenes/logos_juntos/fondo.JPG);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding:20px;
+}
+
+.call{
+    width: 250px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 2px solid #E79232;
+    border-radius: 5px;
+    float:right;
+    margin: 10px;
+    padding: 20px;
+}
+
+.call p{
+    color: white;
+    margin-bottom: 30px;
+    padding: auto;
+}
+
+.textogran{
+    display:none;
+}
+
+h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+.callb{
+    background-color:white;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* --------------Nosotros----------------- */
+
+h2{
+    background-color: #E79232;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+
+.nosotros{
+    width: 100%;
+    height: 450px;
+}
+
+.nleft{
+    background-image: url(imagenes/flyers/flyer1.jpg); 
+    background-size:cover;
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+}
+
+.nright{
+    padding: 20px;
+}
+
+.nright h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.nright p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* --------------Galeria----------------- */
+
+.galeria{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.item{
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+    filter: grayscale(80%)
+}
+
+.item1{
+    background-image: url(imagenes/galeria/vivo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background-image: url(imagenes/galeria/vivo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(imagenes/galeria/vivo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background-image: url(imagenes/galeria/vivo4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    background-image: url(imagenes/galeria/vivo5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6{
+    background-image: url(imagenes/galeria/vivo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7{
+    background-image: url(imagenes/galeria/vivo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item8{
+    background-image: url(imagenes/galeria/vivo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* --------------Footer----------------- */
+
+footer{
+    background-color: orange;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    font-size: 18px;
+}
+
+footer .redes{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer i{
+    font-size: 40px;
+    color: black;
+    letter-spacing: 10px;
+}
+
+
+@media only screen and (min-width:480px){
+
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    
+    .nosotros{
+        display:flex;
+    }
+
+    
+    .nleft{
+        width: 50%;
+        height: 100%;
+        background-position: center;
+    }
+
+    .nright{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (min-width:900px){
+
+    .call{
+        width: 800px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.514);
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .textogran{
+        display:block;
+    }
+
+
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 380px);
+    }
+
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .item4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+
+    .item8{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+}
