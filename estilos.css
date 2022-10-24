@@ -19,7 +19,7 @@ header{
     width: 100%;
     background-color: #E79232;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -30,16 +30,15 @@ header{
     color: #333;
 }
 
-
 .menu{
     float: right;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .redes{
     margin-top: 15px;
     margin-bottom: 15px;
-    text-align: center;
+    float: right;
 }
 
 i{
@@ -50,7 +49,7 @@ i{
 
 
 main{
-    background-image: url(imagenes/logos_juntos/fondo.JPG);
+    background-image: url(imagenes/logos_juntos/fondomobile.JPG);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -64,8 +63,8 @@ main{
     background-color: rgba(0, 0, 0, 0.514);
     border: 2px solid #E79232;
     border-radius: 5px;
-    float:right;
-    margin: 10px;
+    float: right;
+    margin-top: 180px;
     padding: 20px;
 }
 
@@ -108,7 +107,7 @@ h2{
 }
 
 .nleft{
-    background-image: url(imagenes/flyers/flyer1.jpg); 
+    background-image: url(imagenes/flyers/rebelion.jpg); 
     background-size:cover;
     height: 50%;
     width: 100%;
@@ -236,6 +235,8 @@ footer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer .redes{
@@ -247,6 +248,10 @@ footer i{
     font-size: 40px;
     color: black;
     letter-spacing: 10px;
+}
+
+footer p{
+    font-size: 15px;
 }
 
 
@@ -276,6 +281,10 @@ footer i{
 
 
 @media only screen and (min-width:900px){
+
+    main{
+        background-image: url(imagenes/logos_juntos/fondo.JPG);
+    }
 
     .call{
         width: 800px;
