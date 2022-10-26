@@ -65,13 +65,13 @@ main{
     border: 2px solid #E79232;
     border-radius: 5px;
     float: right;
-    margin-top: 180px;
+    margin-top: 250px;
     padding: 20px;
 }
 
 .call p{
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     padding: auto;
 }
 
@@ -92,19 +92,23 @@ h1{
     padding: 10px 20px;
 }
 
-
-/* --------------Discografía----------------- */
-
 h2{
     background-color: #E79232;
     text-align: center;
+    text-transform: uppercase;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: x-large;
+
 }
+
+/* --------------Discografía----------------- */
+
 
 .discografia{
     width: 100%;
-    height: 450px;
+    height: 550px;
 }
 
 .nleft{
@@ -117,15 +121,42 @@ h2{
 
 .nright{
     padding: 20px;
+    height: 35%;
 }
 
 .nright h3{
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .nright p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.redes_disco{
+    text-align: center;
+    padding: 5px;
+    height: auto;
+}
+
+
+/* --------------Videos----------------- */
+
+.contenidovideos{
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.video_video iframe{
+   margin: 0;
+   margin: 10px;
 }
 
 /* --------------Galeria----------------- */
@@ -201,6 +232,62 @@ h2{
 }
 
 
+/* --------------Integrantes----------------- */
+
+.galeria_integra{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 500px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.item{
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+    filter: grayscale(80%)
+}
+
+.describe{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.tomy{
+    background-image: url(imagenes/integrantes/tomy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.seba{
+    background-image: url(imagenes/integrantes/seba.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.diego{
+    background-image: url(imagenes/integrantes/diego.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.russo{
+    background-image: url(imagenes/integrantes/russo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* --------------Contacto----------------- */
 
 
@@ -213,14 +300,11 @@ h2{
 
 .cajacontacto{
     background-color: rgba(255, 255, 255, 0.712);
-    width: 300px;
-    height: 300px;
     padding: 20px;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
 }
 
-form{
+.form_russ{
     font-style:strong;
     padding: 20px;
     width: 200px;
@@ -228,16 +312,24 @@ form{
     text-align: left;
 }
 
+.cajacontacto h3{
+    font-size: 25px;
+    font-style:strong;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* --------------Footer----------------- */
 
 footer{
-    background-color: orange;
+    background-color: #E79232;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
+    padding: 15px;
     font-size: 18px;
     display: flex;
     flex-direction: column;
+    height: 
 }
 
 footer .redes{
@@ -252,7 +344,12 @@ footer i{
 }
 
 footer p{
+    font-size: 20px;
+}
+
+.sitiodesa{
     font-size: 15px;
+    color: white;
 }
 
 
