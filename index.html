@@ -12,11 +12,41 @@
     <title>El Vuelo del Cuervo</title>
 </head>
 <body>
+
     <header>
-        <div class="logo">El Vuelo del Cuervo</div>
-        <i class="fa-solid fa-bars menu"></i>
+            <!-- inicio NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">El Vuelo del Cuervo</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="#" href="#discografia">Discografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="#" href="#videos">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="#" href="#fotografia">Fotografía</a>
+            </li>
+            <li class="nav-item">
+                <a class="#" href="#integrantes">Integrantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="#" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- Termina NavBar -->
     </header>
-    
     <main>  
     <div class="redes">
         <a href="https://open.spotify.com/artist/6Lt08oTsRuM8nCRNFYFfHG?si=ksIng6qnQTCCqEvSqMZMEw"><i class="fa-brands fa-spotify"></i></a>
@@ -32,22 +62,25 @@
     </div>    
     </main>
 
+    <div id="discografia"></div>
     <h2>Discografía</h2>
     <section class="discografia">
         <div class="nleft"></div>
-        <div class="nright">
-            <h3>EP La Rebelión de los comunes (2021)</h3>
-            <p>Grabación: Estudios "Giribone" Mezcla: Estudio "REC"
-            Grabado en mezclado por Leandro Garré en 2020/2021 </p>
-        </div>
-        <div class="redes_disco">
-            <a href="https://open.spotify.com/artist/6Lt08oTsRuM8nCRNFYFfHG?si=ksIng6qnQTCCqEvSqMZMEw"><i class="fa-brands fa-spotify"></i></a>
-            <a href="https://www.youtube.com/channel/UCniYFUDMzZGSwv1vbhrTM5w"><i class="fa-brands fa-youtube"></i></a>
+        <div class="discoaju">
+            <div class="nright">
+                <h3>EP "La Rebelión de los comunes" (2021)</h3>
+                <p>Grabación: Estudios "Giribone" Mezcla: Estudio "REC"
+                Grabado en mezclado por Leandro Garré en 2020/2021 </p>
+            </div>
+            <div class="redes_disco">
+                <a href="https://open.spotify.com/artist/6Lt08oTsRuM8nCRNFYFfHG?si=ksIng6qnQTCCqEvSqMZMEw"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.youtube.com/channel/UCniYFUDMzZGSwv1vbhrTM5w"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
     </section>
-
+    <div id="videos"></div>
     <h2>Videos</h2>
-    <div class="contenido">
+      <div class="contenido">
         <div class="contenidovideos">
             <div class="video_video">
                 <iframe  src="https://www.youtube.com/embed/5FjONuu_8xA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,7 +92,7 @@
                 <iframe src="https://www.youtube.com/embed/9Sqiazeu7MI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-
+    <div id="fotografia"></div>
     <h2>Fotografía</h2>
     <section class="galeria">
         <article class="item item1"></article>
@@ -71,7 +104,7 @@
         <article class="item item7"></article>
         <article class="item item8"></article>
     </section>
-
+    <div id="integrantes"></div>
     <h2>Integrantes</h2>
     <section class="galeria_integra">
         <article class="item tomy">
@@ -87,35 +120,34 @@
             <div class="describe">Martín de Liébana - Batería</div>
         </article>
     </section>
-
+    <div id="contacto"></div>
     <h2>Contacto</h2>
-    <section class="contacto">
-        <div class="cajacontacto">
+        <div class="contacto2">
+        <div class="titulocon">
             <h3>Dejanos tu mensaje!</h3>
-                <div class="fotocontacto"></div>
-                <div class="formulario_russ">
-                    <form_russ action="enviar.php" method="post" enctype="text/plain" netlify>
-                    <label for="names">Nombre </label>
-                    <input id= "names" name="Names" type="text" required>
-                    <br>
-                    <label for="names">Correo </label>
-                    <input id= "names" name="Names" type="email">
-                    <br>
-                    <label for="">Comentarios</label> <br>
-                    <textarea name="" id="" cols="25" rows="5"
-                    placeholder=""></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                    </form_russ>
-                </div>       
-            </div>
         </div>
-    </section>
-   
+            <div class="contact_us_form">
+            <form class="row">
+                <div class="col-sm-12 col-sm-6">
+                    <label for="validationDefault01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" required="">
+                </div>
+                <div class="col-sm-12">
+                    <label for="validationDefault05" class="form-label">Mensaje
+                    </label>
+                    <textarea class="form-control" id="validationDefault05" placeholder="Ingrese su mensaje" required=""
+                    rows="5"></textarea>
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                    <button class="btn btn-footerBg" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <footer>
         <p>Todos los derechos reservados</p>
-        <p class="sitiodesa">Este sitio fue desarrollado por Libre el Jabalí</p>
+        <p class="sitiodesa">Este sitio fue desarrollado por MDELIEBANA</p>
         <div class="redes">
         <a href="https://open.spotify.com/artist/6Lt08oTsRuM8nCRNFYFfHG?si=ksIng6qnQTCCqEvSqMZMEw"><i class="fa-brands fa-spotify"></i></a>
         <a href="https://www.instagram.com/elvuelodelcuervomusica/"><i class="fa-brands fa-instagram"></i></a>

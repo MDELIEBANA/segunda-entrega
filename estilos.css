@@ -5,16 +5,41 @@
     box-sizing: border-box;
 }
 
-/* colores del vuelo del cuervo 
-#42307A violeta
-#E79232 naranja
-*/
+/* colores del vuelo del cuervo: #42307A violeta - #E79232 naranja */
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header{
+/* Header Bootstrap */
+
+.navbar{
+    background-color: #E79232;
+}
+
+.navbar-brand{
+    color: black !important;
+    font-size: x-large;
+}
+
+.nav-item{
+    text-align: center;
+}
+
+.nav-item a{
+    text-decoration: none !important;
+    color: white;
+    list-style: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.nav-item :hover{
+    color: black !important;
+}
+
+/* Header anterior a BS */
+/* header{
     height: 80px;
     width: 100%;
     background-color: #E79232;
@@ -24,7 +49,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
+} */
 
 .menu{
     float: right;
@@ -110,6 +135,7 @@ h2{
 .discografia{
     width: 100%;
     height: 550px;
+    background-color: lightgray;
 }
 
 .nleft{
@@ -295,33 +321,20 @@ h2{
 
 /* --------------Contacto----------------- */
 
-
-.contacto{
-    background-color: black;
+.contacto2{
+    background-color: lightgray;
+    padding: 20px;
     display: flex;
-    padding: 20px;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.cajacontacto{
-    background-color: rgba(255, 255, 255, 0.712);
-    padding: 20px;
-    text-align: left;
-}
-
-.form_russ{
-    font-style:strong;
-    padding: 20px;
-    width: 200px;
-    height: auto;
-    text-align: left;
-}
-
-.cajacontacto h3{
-    font-size: 25px;
-    font-style:strong;
+.titulocon{
+    margin-bottom: 15px;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #E79232 !important;
 }
 
 
@@ -357,50 +370,75 @@ footer p{
     color: white;
 }
 
+/* ------------------ Media - Adaptación 1200px----------------------- */
 
-@media only screen and (min-width:480px){
+@media only screen and (min-width:1200px){
 
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-    }
-    
-    .discografia{
+/* Home 1200 */
+
+main{
+     background-image: url(imagenes/logos_juntos/fondo.JPG);
         display:flex;
-    }
+        flex-flow: row wrap;  
+}
 
-    
-    .nleft{
-        width: 50%;
-        height: 100%;
-        background-position: center;
-    }
+.call{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.514);
+    margin: 10px;
+    padding: 40px;
+}
 
-    .nright{
-        width: 50%;
-        height: 100%;
-    }
+.textogran{
+    display:block;
+}
+
+/* ---Discografía 1200--- */
+
+.discografia{
+display: flex;
+}
+
+.discoaju{
+    display: flex;
+    flex-flow: column;
+}
+.nleft{
+    background-image: url(imagenes/flyers/rebelion_full.jpg); 
+    height: 100%;
+    width: 80%;
+}
+
+.nright{
+    padding: 20px;
+    height: 60%;
+}
+
+.redes_disco{
+   height: 40%;
+   text-align: center;
+   letter-spacing: 20px;
 }
 
 
-@media only screen and (min-width:900px){
+/* --------------Videos 1200----------------- */
 
-    main{
-        background-image: url(imagenes/logos_juntos/fondo.JPG);
-    }
+.contenidovideos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
 
-    .call{
-        width: 800px;
-        height: auto;
-        background-color: rgba(0, 0, 0, 0.514);
-        margin: 10px;
-        padding: 20px;
-    }
+.video_video iframe{
+  height: 400px;
+  width: 350px;
+  background-position: center;
+}
 
-    .textogran{
-        display:block;
-    }
 
+
+/*-- Fotografía 1200 --*/
 
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
@@ -431,5 +469,19 @@ footer p{
         grid-column: 2/3;
         grid-row: 4/5;
     }
+
+
+    /* --------------Integrantes----------------- */
+
+.galeria_integra{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-gap: 20px;
+    padding: 20px;
+}
 
 }
