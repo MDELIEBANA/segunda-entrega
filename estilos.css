@@ -24,11 +24,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    text-shadow: 0 0 5px black;
-}
-
-.logo span{
-    color: #333;
 }
 
 .menu{
@@ -40,6 +35,10 @@ header{
     margin-top: 15px;
     margin-bottom: 15px;
     float: right;
+}
+
+.redes :hover{
+    color:white;
 }
 
 i{
@@ -61,9 +60,9 @@ main{
 .call{
     width: 250px;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid #E79232;
-    border-radius: 5px;
+    border-radius: 10px;
     float: right;
     margin-top: 250px;
     padding: 20px;
@@ -71,7 +70,8 @@ main{
 
 .call p{
     color: white;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
     padding: auto;
 }
 
@@ -85,11 +85,13 @@ h1{
     font-size: 25px;
 }
 
-.callb{
+.callb {
     background-color:white;
-    text-decoration: none;
-    color: black;
     padding: 10px 20px;
+    height: 30px;
+    width: 20px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 h2{
@@ -140,6 +142,10 @@ h2{
     height: auto;
 }
 
+.redes_disco :hover{
+   color: #E79232;
+}
+
 
 /* --------------Videos----------------- */
 
@@ -173,13 +179,13 @@ h2{
 
 .item{
     width: 100%;
-    border: 2px solid #fff;
+    border: 2px solid lightgray;
 }
 
 .item:hover{
     transform: scale(1.05);
     transition: all 1s;
-    filter: grayscale(80%)
+    filter: grayscale(80%);
 }
 
 .item1{
@@ -318,6 +324,7 @@ h2{
     margin-bottom: 20px;
 }
 
+
 /* --------------Footer----------------- */
 
 footer{
@@ -328,7 +335,6 @@ footer{
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    height: 
 }
 
 footer .redes{
